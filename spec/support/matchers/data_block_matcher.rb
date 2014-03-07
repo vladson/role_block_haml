@@ -1,7 +1,7 @@
-Rspec::Matchers.define :data_block do |name|
+RSpec::Matchers.define :data_block do |name|
 
   match do |subject|
-    subject.have_selector('data-block' => name)
+    have_xpath "//*[contains(@data-block, #{name})]"
   end
 
 end

@@ -13,4 +13,10 @@ feature 'haml blocks and roles' do
       expect(page).to have_text('Text')
     end
   end
+
+  context 'haml block' do
+    scenario 'has block' do
+      expect(page).to data_block('baz')
+    end
+  end
 end
