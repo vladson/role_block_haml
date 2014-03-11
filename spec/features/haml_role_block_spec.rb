@@ -6,17 +6,19 @@ feature 'haml blocks and roles' do
     before { visit '/'}
 
     scenario 'has role' do
-      expect(page).to have_xpath '//div[contains(@data-role, "foo")]'
+      expect(page).to have_role('foo')
     end
 
-    scenario 'text' do
-      expect(page).to have_text('Text')
+    scenario 'has double roles' do
+      expect(page).to have_role('yiff')
     end
   end
 
   context 'haml block' do
+    before {visit '/'}
+
     scenario 'has block' do
-      expect(page).to data_block('baz')
+      expect(page).to have_block('baz')
     end
   end
 end
