@@ -50,19 +50,37 @@ feature 'haml blocks and roles' do
 
   context 'block shortcut' do
     scenario 'has explicit block' do
-      expect(page).to have_xpath '//*[contains(@data-role, "single_block")]'
+      expect(page).to have_xpath '//*[contains(@data-block, "single_block")]'
     end
 
     scenario 'has explicit double blocks' do
-      expect(page).to have_xpath '//*[contains(@data-role, "dblock")]'
+      expect(page).to have_xpath '//*[contains(@data-block, "dblock")]'
     end
 
     scenario 'has implicit block' do
-      expect(page).to have_xpath '//*[contains(@data-role, "iblock")]'
+      expect(page).to have_xpath '//*[contains(@data-block, "iblock")]'
     end
 
-    scenario 'has explicit double blocks' do
-      expect(page).to have_xpath '//*[contains(@data-role, "diblock")]'
+    scenario 'has implicit double blocks' do
+      expect(page).to have_xpath '//*[contains(@data-block, "second_impl_block")]'
+    end
+  end
+
+  context 'with mixed order' do
+    scenario 'and first_role block is visible' do
+      expect(page).to have_xpath '//*[contains(@data-block, "second_block")]'
+    end
+
+    scenario 'and first_role role is visible' do
+      expect(page).to have_xpath '//*[contains(@data-role, "first_role")]'
+    end
+
+    scenario 'and first_block block is visible' do
+      expect(page).to have_xpath '//*[contains(@data-block, "first_block")]'
+    end
+
+    scenario 'and first_block role is visible' do
+      expect(page).to have_xpath '//*[contains(@data-role, "second_role")]'
     end
   end
 
