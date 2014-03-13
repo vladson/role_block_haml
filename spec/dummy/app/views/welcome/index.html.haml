@@ -1,3 +1,12 @@
-.col{ data: {role: 'foo'} }= Text
-.col{ data: {role: 'bar baz', block: 'baz'} }= Text
-.col{ data: {role: 'foo', block: 'baz gaz'} }= Text
+.col{ data: { role: 'foo' } }= Text
+.col{ data: { role: 'bar baz', block: 'vaz' } }= Text
+.col{ data: { block: 'saz' } }= Text
+.col{ data: { role: 'foo', block: 'haz gaz' } }= Text
+%div@single_role
+%div@no_way@second_role
+@single_i_role
+@zuzu@second_i_role
+%div@@single_block
+%div@@double@@dblock
+@@iblock
+@@di@diblock
