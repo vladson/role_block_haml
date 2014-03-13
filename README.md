@@ -1,22 +1,24 @@
 # Role Block Haml
 Role Block Haml - is a gem, that adds some awesome shortcuts for `data-role` and `data-block` attributes to Haml parser.
-Especially useful when combined with [Evil Blocks] by [Evil Martians]
+Especially useful when combined with [Evil Blocks] by [Andrey Sitnik].
+[Evil Blocks]: https://github.com/ai/evil-blocks
+[Andrey Sitnik]: https://github.com/ai
 
 ## Usage
 
 ```haml
-    @@todo
-      %span@linker
-      @actor
+@@todo
+  %span@linker
+  @actor
 ```
 
 Is converted into:
 
 ```html
-    <div data-block="todo">
-        <span data-role="linker"></span>
-        <div data-role="actor"></div>
-    </div>
+<div data-block="todo">
+    <span data-role="linker"></span>
+    <div data-role="actor"></div>
+</div>
 ```
 
 ## Install
@@ -26,5 +28,5 @@ Is converted into:
 Add `role_block_haml` gem to `Gemfile`:
 
 ```ruby
-    gem "role_block_haml"
+gem "role_block_haml"
 ```
