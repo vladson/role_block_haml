@@ -3,7 +3,7 @@ module RoleBlockHaml
     class Engine < ::Rails::Engine
       initializer 'role_block_haml' do |app|
         if defined? Haml::Parser
-          module Haml::Parser
+          class Haml::Parser
             def self.parse_class_and_id(list)
               attributes = {}
               return attributes if list.empty?
