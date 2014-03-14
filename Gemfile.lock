@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    role_block_haml (0.0.1)
+    role_block_haml (0.2.0)
       haml (> 3.1)
       rails (~> 3.2.16)
 

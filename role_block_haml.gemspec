@@ -6,6 +6,7 @@ require "role_block_haml/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "role_block_haml"
+  s.homepage    = "https://github.com/vladson/role_block_haml"
   s.version     = RoleBlockHaml::VERSION
   s.authors     = ["Vladislav Bogomolov"]
   s.email       = ["vladson4ik@gmail.com"]
