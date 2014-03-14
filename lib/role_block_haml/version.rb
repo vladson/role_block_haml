@@ -1,3 +1,3 @@
 module RoleBlockHaml
-  VERSION = "0.2.1"
+  VERSION = "0.1.1"
 end
