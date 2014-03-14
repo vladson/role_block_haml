@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    role_block_haml (0.2.1)
-      haml (> 3.1)
+    role_block_haml (0.2.2)
+      haml (~> 4.0)
       rails (~> 3.2.16)
 
 GEM
@@ -45,7 +45,8 @@ GEM
       xpath (~> 2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
-    haml (3.1.8)
+    haml (4.0.5)
+      tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
       activesupport (>= 3.1, < 4.1)
@@ -112,7 +113,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.38)
+    tzinfo (0.3.39)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
