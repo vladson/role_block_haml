@@ -33,3 +33,11 @@ Add `role_block_haml` gem to `Gemfile`:
 ```ruby
 gem "role_block_haml"
 ```
+
+### Ruby
+
+Change HAML parser to support shortcuts:
+```ruby
+RoleBlockHaml.install_to_haml!
+```
+
