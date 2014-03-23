@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    role_block_haml (0.2.2)
+    role_block_haml (0.2.4)
       haml (~> 4.0)
-      rails (~> 3.2.16)
 
 GEM
   remote: https://rubygems.org/
@@ -123,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   haml-rails
+  rails (> 3.2)
   role_block_haml!
   rspec-rails
   sqlite3
